@@ -83,6 +83,10 @@ def returnKeepColumns(decayModel = False):
         keepColumns += ['predicted_T0','predicted_T2','predicted_T4','predicted_T8', 'predicted_T16']
     return keepColumns
 
+
+
+
+#implement this
 def trainTimepointModels(df_train, df_test, outcome = 'T0', modelName = 'model_T0'):
 
     outputData = {}
@@ -226,6 +230,8 @@ def trainTimepointModels(df_train, df_test, outcome = 'T0', modelName = 'model_T
 
     return (df_train, df_test, outputData)
 
+
+#implement this
 def trainDecayModel(df_train, df_test, modelName = 'model_decay_rate'):
 
     outputData = {}
